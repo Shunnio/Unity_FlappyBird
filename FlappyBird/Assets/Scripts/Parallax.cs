@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   private MeshRenderer meshRenderer;
+   public float animationSpeed = 0.1f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void Awake() {
+       meshRenderer = GetComponent<MeshRenderer>();
+   }
+
+   private void Update() {
+       meshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
+   }
 }
