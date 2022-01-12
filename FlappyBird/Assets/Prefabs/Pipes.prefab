@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5318865964074798354}
   m_Layer: 0
   m_Name: Bottom
-  m_TagString: Untagged
+  m_TagString: Obsacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7c91b2a043829428071303a6bec6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &7602651350996386773
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +169,7 @@ GameObject:
   - component: {fileID: 2246626594645472965}
   m_Layer: 0
   m_Name: Top
-  m_TagString: Untagged
+  m_TagString: Obsacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +277,7 @@ GameObject:
   - component: {fileID: 3389837587082564596}
   m_Layer: 0
   m_Name: Scoring
-  m_TagString: Untagged
+  m_TagString: Scoring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -41,5 +41,16 @@ public class Player : MonoBehaviour
          transform.position += direction * Time.deltaTime;
     }
 
+    private void OnTriggerEnter2D(Collider2D other) {
+        /*
+        //My cat added some code
+        //bnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn 
+        */
+        if(other.gameObject.tag == "Obsacle"){
+            FindObjectOfType<GameManager>().GameOver();
+        }else if(other.gameObject.tag == "Scoring"){
+            FindObjectOfType<GameManager>().IncreaseScroe();
+        }
+    }
    
 }
